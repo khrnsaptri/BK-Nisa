@@ -1,0 +1,336 @@
+ERROR - 2022-12-16 22:45:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:45:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:47:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:47:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:47:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:47:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:47:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:47:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:48:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:48:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:50:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:50:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:50:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:50:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 22:51:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#9 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`...', Array, false)
+#3 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\BK-Nisa\app\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Shop->index()
+#7 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xamppp\htdocs\BK-Nisa\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\BK-Nisa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-16 22:51:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang`.*, `kategori`.`nama` AS `kategori`
+FROM `barang`
+JOIN `kategori` ON `barang`.`id_kategori`=`kategori`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Shop.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

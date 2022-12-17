@@ -1,0 +1,33 @@
+CRITICAL - 2022-12-17 03:04:12 --> Undefined variable $diskon
+in APPPATH\Views\shop\product.php on line 285.
+ 1 APPPATH\Views\shop\product.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diskon', 'APPPATH\\Views\\shop\\product.php', 285)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\shop\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('shop/product', [], true)
+ 5 APPPATH\Controllers\Shop.php(62): view('shop/product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->product('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 03:04:42 --> Undefined variable $diskon
+in APPPATH\Views\shop\product.php on line 285.
+ 1 APPPATH\Views\shop\product.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diskon', 'APPPATH\\Views\\shop\\product.php', 285)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\shop\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('shop/product', [], true)
+ 5 APPPATH\Controllers\Shop.php(62): view('shop/product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->product('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 03:04:59 --> Undefined variable $diskon
+in APPPATH\Views\shop\product.php on line 285.
+ 1 APPPATH\Views\shop\product.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diskon', 'APPPATH\\Views\\shop\\product.php', 285)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\shop\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('shop/product', [], true)
+ 5 APPPATH\Controllers\Shop.php(62): view('shop/product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Shop->product('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
